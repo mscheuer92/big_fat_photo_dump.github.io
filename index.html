@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
   .triangle_down1 {
@@ -15,9 +14,8 @@
     margin-right: 0.5em;
     margin-left: 1.0em;
   }
-
   .accordion {
-    background-color: #eee;
+    background-color: #eeeeee;
     color: #444;
     cursor: pointer;
     padding: 18px;
@@ -28,18 +26,21 @@
     font-size: 15px;
     transition: 0.4s;
   }
-
+  html {
+  --main-bg-color: rgb(101, 60, 197);
+}
   .active,
   .accordion:hover {
-    background-color: #ffc15c;
+    background-color: var(--main-bg-color)
+    /* background-color: #1365b1; */
   }
-
   .panel {
     padding: 0 18px;
     background-color: white;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+    background-image: url("test/project/photo/background_image/istockphoto-1284024960-612x612.jpg");
   }
 
   * {
@@ -49,8 +50,8 @@
   body {
     margin: 0;
     font-family: Arial;
-  }
 
+}
   .header {
     text-align: center;
     padding: 32px;
@@ -115,6 +116,7 @@
 <body>
 
   <!-- Header -->
+
   <div class="header">
     <h1>highlights</h1>
 
@@ -212,11 +214,11 @@
 
 
   </div>
-  <div hidden>
+  <!-- <div hidden>
     <script type="text/javascript" id="clstr_globe"
       src="//clustrmaps.com/globe.js?d=KBuauQOIkNsWmRzumbBxKEs8qqBZpDtQPGOLECw_VCE"></script>
 
-  </div>
+  </div> -->
   <script>
     function scrollToElement($el, time = 500) {
       $([document.documentElement, document.body]).animate({
@@ -244,6 +246,9 @@
 
       );
     }
+    const randomColor = "#"+((1<<24)*Math.random()|0).toString(16); 
+document.documentElement.style.setProperty('--main-bg-color', randomColor);
+
   </script>
 
 </body>

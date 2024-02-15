@@ -14,6 +14,7 @@
     margin-right: 0.5em;
     margin-left: 1.0em;
   }
+
   .accordion {
     background-color: #eeeeee;
     color: #444;
@@ -26,15 +27,18 @@
     font-size: 15px;
     transition: 0.4s;
   }
+
   html {
-  --main-bg-color: rgb(101, 60, 197);
-}
+    --main-bg-color: rgb(101, 60, 197);
+  }
+
   .active,
   .accordion:hover {
     background-color: var(--main-bg-color);
     /* background-color: #1365b1; */
     color: white;
   }
+
   .panel {
     padding: 0 18px;
     background-color: white;
@@ -52,7 +56,8 @@
     margin: 0;
     font-family: Arial;
 
-}
+  }
+
   .header {
     text-align: center;
     padding: 32px;
@@ -92,6 +97,7 @@
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
+    border-radius: 8px;
   }
 
 
@@ -180,6 +186,7 @@
         <img src="test/project/photo/feb/IMG_6803.JPG" style="width:100%" class="image">
 
       </div>
+
       <div class="column">
         <img src="test/project/photo/feb/IMG_6765.jpg" style="width:100%" class="image">
         <img src="test/project/photo/feb/IMG_6807.jpg" style="width:100%" class="image">
@@ -243,8 +250,9 @@
 
       );
     }
-    const randomColor = "#"+((1<<24)*Math.random()|0).toString(16); 
-document.documentElement.style.setProperty('--main-bg-color', randomColor);
+    const randomColor = "#" + ((1 << 24) * Math.random() | 0).toString(16);
+    document.documentElement.style.setProperty('--main-bg-color', randomColor);
+
 
   </script>
 

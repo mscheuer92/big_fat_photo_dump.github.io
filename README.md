@@ -1,1 +1,0 @@
-# big_fat_photo_dump.io

@@ -1,7 +1,36 @@
 
  <!DOCTYPE html>
 <html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  border: 5px solid-back;
+
+}
+
+.active, .accordion:hover {
+  background-color: #f2c04b;
+  border: #444; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -33,6 +62,8 @@ body {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
+
+
 
 /* Create four equal columns that sits next to each other */
 .column {
@@ -76,48 +107,56 @@ body {
 </div>
 
 <!-- Photo Grid -->
-<h3><center>January 2024</center> </h3>
-<div class="row"> 
-  <div class="column">
-    <img src="test/project/photo/jan/IMG_6496.JPG" style="width:100%" class="image">
-    <img src="test/project/photo/jan/IMG_6636.jpg" style="width:100%" class="image">
-    <img src="test/project/photo/jan/IMG_6763.JPG" style="width:100%" class="image">
-    <img src="test/project/photo/jan/IMG_6530.jpg" style="width:100%" class="image">
-  </div>
+
+
+<button class="accordion"><center>January 2024</center></button>
+<div class="panel">
+  <div class="row"> 
+    <div class="column">
+      <img src="test/project/photo/jan/IMG_6496.JPG" style="width:100%" class="image">
+      <img src="test/project/photo/jan/IMG_6636.jpg" style="width:100%" class="image">
+      <img src="test/project/photo/jan/IMG_6763.JPG" style="width:100%" class="image">
+      <img src="test/project/photo/jan/IMG_6530.jpg" style="width:100%" class="image">
+    </div>
+    
+    <div class="column">
+      
+      <img src="test/project/photo/jan/IMG_6576.jpg" style="width:100%" class="image">
+      <img src="test/project/photo/jan/IMG_6600.jpg" style="width:100%" class="image">
+      <img src="test/project/photo/jan/IMG_6591.JPG" style="width:100%" class="image">
   
-  <div class="column">
-    
-    <img src="test/project/photo/jan/IMG_6576.jpg" style="width:100%" class="image">
-    <img src="test/project/photo/jan/IMG_6600.jpg" style="width:100%" class="image">
-    <img src="test/project/photo/jan/IMG_6591.JPG" style="width:100%" class="image">
-
-    <img src="test/project/photo/jan/IMG_6654.jpg" style="width:100%" class="image">
-    <img src="test/project/photo/jan/IMG_6764.JPG" style="width:100%" class="image">
-
+      <img src="test/project/photo/jan/IMG_6654.jpg" style="width:100%" class="image">
+      <img src="test/project/photo/jan/IMG_6764.JPG" style="width:100%" class="image">
+  
+    </div>
+  
+    <div class="column">
+      <img src="test/project/photo/jan/IMG_6561.jpg" style="width:100%" class="image">
+      <img src="test/project/photo/jan/IMG_6622.JPG" style="width:100%" class="image">
+      <img src="test/project/photo/jan/IMG_6762.JPG" style="width:100%" class="image">
+      <img src="test/project/photo/jan/IMG_6695.jpg" style="width:100%" class="image">
+      
+    </div>
+  
+    <div class="column">
+      <img src="test/project/photo/jan/IMG_6761.JPG" style="width:100%" class="image">
+      <img src="test/project/photo/jan/IMG_6538.jpg" style="width:100%" class="image">
+      <img src="test/project/photo/jan/IMG_6606.jpg" style="width:100%" class="image">
+      <img src="test/project/photo/jan/IMG_6635.jpg" style="width:100%" class="image">
+    </div>
   </div>
 
-  <div class="column">
-    <img src="test/project/photo/jan/IMG_6561.jpg" style="width:100%" class="image">
-    <img src="test/project/photo/jan/IMG_6622.JPG" style="width:100%" class="image">
-    <img src="test/project/photo/jan/IMG_6762.JPG" style="width:100%" class="image">
-    <img src="test/project/photo/jan/IMG_6695.jpg" style="width:100%" class="image">
-    
-  </div>
-
-  <div class="column">
-    <img src="test/project/photo/jan/IMG_6761.JPG" style="width:100%" class="image">
-    <img src="test/project/photo/jan/IMG_6538.jpg" style="width:100%" class="image">
-    <img src="test/project/photo/jan/IMG_6606.jpg" style="width:100%" class="image">
-    <img src="test/project/photo/jan/IMG_6635.jpg" style="width:100%" class="image">
-  </div>
 </div>
 <br>
 <br>
-  <h3><center>February 2024</center> </h3>
+
+<button class="accordion"><center>February 2024</center></button>
+<div class="panel">
   <div class="row"> 
     <div class="column">
       <img src="test/project/photo/feb/IMG_6749.jpg" style="width:100%" class="image">
       <img src="test/project/photo/feb/IMG_6786.jpg" style="width:100%" class="image">
+      <img src="test/project/photo/feb/IMG_6858.JPG" style="width:100%" class="image">
       <img src="test/project/photo/feb/IMG_6803.JPG" style="width:100%" class="image">
 
     </div>
@@ -125,6 +164,9 @@ body {
       <img src="test/project/photo/feb/IMG_6765.jpg" style="width:100%" class="image">
       <img src="test/project/photo/feb/IMG_6807.jpg" style="width:100%" class="image">
       <img src="test/project/photo/feb/alex.jpg" style="width:100%" class="image">
+      <img src="test/project/photo/feb/IMG_6832.jpg" style="width:100%" class="image">
+
+
 
     </div>
     <div class="column">
@@ -133,7 +175,7 @@ body {
       <img src="test/project/photo/feb/IMG_6812.jpg" style="width:100%" class="image">
       <img src="test/project/photo/feb/IMG_6844.jpg" style="width:100%" class="image">
       <img src="test/project/photo/feb/IMG_6842.jpg" style="width:100%" class="image">
-
+      <img src="test/project/photo/feb/IMG_6792.jpg" style="width:100%" class="image">
      
     </div>
     <div class="column">
@@ -141,12 +183,35 @@ body {
       <img src="test/project/photo/feb/IMG_6773.jpg" style="width:100%" class="image">
       <img src="test/project/photo/feb/IMG_6783.jpg" style="width:100%" class="image">
       <img src="test/project/photo/feb/IMG_6834.jpg" style="width:100%" class="image">
+      <img src="test/project/photo/feb/IMG_6817.PNG" style="width:100%" class="image">
 
     </div>
   </div>
+
+
+
+
+
+</div>   
   <div hidden>
       <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=KBuauQOIkNsWmRzumbBxKEs8qqBZpDtQPGOLECw_VCE"></script>
 
     </div>
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+      </script>
     </body>
 </html>

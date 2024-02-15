@@ -1,217 +1,244 @@
-
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <style>
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-  border: 5px solid-back;
 
+.triangle_down1 {
+  position: relative;
+  top: -5px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-right: 0.1em solid black;
+  border-top: 0.1em solid black;
+  transform: rotate(135deg);
+  margin-right: 0.5em;
+  margin-left: 1.0em;
 }
 
-.active, .accordion:hover {
-  background-color: #f2c04b;
-  border: #444; 
-}
-
-.panel {
-  padding: 0 18px;
-  display: none;
-  background-color: white;
-  overflow: hidden;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial;
-}
-
-.header {
-  text-align: center;
-  padding: 32px;
-}
-
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-
-
-/* Create four equal columns that sits next to each other */
-.column {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
   }
-}
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
+  .active,
+  .accordion:hover {
+    background-color: #ffc15c;
   }
-}
+
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial;
+  }
+
+  .header {
+    text-align: center;
+    padding: 32px;
+  }
+
+  .row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
 </style>
+
 <body>
 
-<!-- Header -->
-<div class="header">
-  <h1>highlights</h1>
- 
-</div>
+  <!-- Header -->
+  <div class="header">
+    <h1>highlights</h1>
 
-<!-- Photo Grid -->
+  </div>
+
+  <!-- Photo Grid -->
 
 
-<button class="accordion"><center>January 2024</center></button>
-<div class="panel">
-  <div class="row"> 
-    <div class="column">
-      <img src="test/project/photo/jan/IMG_6496.JPG" style="width:100%" class="image">
-      <img src="test/project/photo/jan/IMG_6636.jpg" style="width:100%" class="image">
-      <img src="test/project/photo/jan/IMG_6763.JPG" style="width:100%" class="image">
-      <img src="test/project/photo/jan/IMG_6530.jpg" style="width:100%" class="image">
-    </div>
+
+  <button class="accordion" >
+
+    <center>January 2024<div id="dialog2" class="triangle_down1"></div></center>
     
-    <div class="column">
-      
-      <img src="test/project/photo/jan/IMG_6576.jpg" style="width:100%" class="image">
-      <img src="test/project/photo/jan/IMG_6600.jpg" style="width:100%" class="image">
-      <img src="test/project/photo/jan/IMG_6591.JPG" style="width:100%" class="image">
-  
-      <img src="test/project/photo/jan/IMG_6654.jpg" style="width:100%" class="image">
-      <img src="test/project/photo/jan/IMG_6764.JPG" style="width:100%" class="image">
-  
+  </button>
+  <div class="panel">
+    <div class="row">
+      <div class="column">
+        <img src="test/project/photo/jan/IMG_6496.JPG" style="width:100%" class="image">
+        <img src="test/project/photo/jan/IMG_6636.jpg" style="width:100%" class="image">
+        <img src="test/project/photo/jan/IMG_6763.JPG" style="width:100%" class="image">
+        <img src="test/project/photo/jan/IMG_6530.jpg" style="width:100%" class="image">
+      </div>
+
+      <div class="column">
+
+        <img src="test/project/photo/jan/IMG_6576.jpg" style="width:100%" class="image">
+        <img src="test/project/photo/jan/IMG_6591.JPG" style="width:100%" class="image">
+        <img src="test/project/photo/jan/IMG_6600.jpg" style="width:100%" class="image">
+        <img src="test/project/photo/jan/IMG_6654.jpg" style="width:100%" class="image">
+        <img src="test/project/photo/jan/IMG_6764.JPG" style="width:100%" class="image">
+
+      </div>
+
+      <div class="column">
+        <img src="test/project/photo/jan/IMG_6561.jpg" style="width:100%" class="image">
+        <img src="test/project/photo/jan/IMG_6622.JPG" style="width:100%" class="image">
+        <img src="test/project/photo/jan/IMG_6762.JPG" style="width:100%" class="image">
+        <img src="test/project/photo/jan/IMG_6695.jpg" style="width:100%" class="image">
+
+      </div>
+
+      <div class="column">
+        <img src="test/project/photo/jan/IMG_6761.JPG" style="width:100%" class="image">
+        <img src="test/project/photo/jan/IMG_6538.jpg" style="width:100%" class="image">
+        <img src="test/project/photo/jan/IMG_6606.jpg" style="width:100%" class="image">
+        <img src="test/project/photo/jan/IMG_6635.jpg" style="width:100%" class="image">
+      </div>
     </div>
-  
-    <div class="column">
-      <img src="test/project/photo/jan/IMG_6561.jpg" style="width:100%" class="image">
-      <img src="test/project/photo/jan/IMG_6622.JPG" style="width:100%" class="image">
-      <img src="test/project/photo/jan/IMG_6762.JPG" style="width:100%" class="image">
-      <img src="test/project/photo/jan/IMG_6695.jpg" style="width:100%" class="image">
-      
-    </div>
-  
-    <div class="column">
-      <img src="test/project/photo/jan/IMG_6761.JPG" style="width:100%" class="image">
-      <img src="test/project/photo/jan/IMG_6538.jpg" style="width:100%" class="image">
-      <img src="test/project/photo/jan/IMG_6606.jpg" style="width:100%" class="image">
-      <img src="test/project/photo/jan/IMG_6635.jpg" style="width:100%" class="image">
-    </div>
+
   </div>
+  <br>
 
-</div>
-<br>
-<br>
 
-<button class="accordion"><center>February 2024</center></button>
-<div class="panel">
-  <div class="row"> 
-    <div class="column">
-      <img src="test/project/photo/feb/IMG_6749.jpg" style="width:100%" class="image">
-      <img src="test/project/photo/feb/IMG_6786.jpg" style="width:100%" class="image">
-      <img src="test/project/photo/feb/IMG_6858.JPG" style="width:100%" class="image">
-      <img src="test/project/photo/feb/IMG_6803.JPG" style="width:100%" class="image">
+  <button class="accordion">
+    <center>February 2024<div id="dialog2" class="triangle_down1"></div></center>
+  </button>
+  <div class="panel">
+    <div class="row">
+      <div class="column">
+        <img src="test/project/photo/feb/IMG_6749.jpg" style="width:100%" class="image">
+        <img src="test/project/photo/feb/IMG_6786.jpg" style="width:100%" class="image">
+        <img src="test/project/photo/feb/IMG_6858.JPG" style="width:100%" class="image">
+        <img src="test/project/photo/feb/IMG_6803.JPG" style="width:100%" class="image">
 
+      </div>
+      <div class="column">
+        <img src="test/project/photo/feb/IMG_6765.jpg" style="width:100%" class="image">
+        <img src="test/project/photo/feb/IMG_6807.jpg" style="width:100%" class="image">
+        <img src="test/project/photo/feb/alex.jpg" style="width:100%" class="image">
+        <img src="test/project/photo/feb/IMG_6832.jpg" style="width:100%" class="image">
+
+
+
+      </div>
+      <div class="column">
+        <img src="test/project/photo/feb/IMG_6741.jpg" style="width:100%" class="image">
+        <img src="test/project/photo/feb/IMG_6782.jpg" style="width:100%" class="image">
+        <img src="test/project/photo/feb/IMG_6812.jpg" style="width:100%" class="image">
+        <img src="test/project/photo/feb/IMG_6844.jpg" style="width:100%" class="image">
+        <img src="test/project/photo/feb/IMG_6842.jpg" style="width:100%" class="image">
+        <img src="test/project/photo/feb/IMG_6792.jpg" style="width:100%" class="image">
+
+      </div>
+      <div class="column">
+        <img src="test/project/photo/feb/IMG_6769.jpg" style="width:100%" class="image">
+        <img src="test/project/photo/feb/IMG_6773.jpg" style="width:100%" class="image">
+        <img src="test/project/photo/feb/IMG_6783.jpg" style="width:100%" class="image">
+        <img src="test/project/photo/feb/IMG_6834.jpg" style="width:100%" class="image">
+        <img src="test/project/photo/feb/IMG_6817.PNG" style="width:100%" class="image">
+
+      </div>
     </div>
-    <div class="column">      
-      <img src="test/project/photo/feb/IMG_6765.jpg" style="width:100%" class="image">
-      <img src="test/project/photo/feb/IMG_6807.jpg" style="width:100%" class="image">
-      <img src="test/project/photo/feb/alex.jpg" style="width:100%" class="image">
-      <img src="test/project/photo/feb/IMG_6832.jpg" style="width:100%" class="image">
 
 
 
-    </div>
-    <div class="column">
-      <img src="test/project/photo/feb/IMG_6741.jpg" style="width:100%" class="image">
-      <img src="test/project/photo/feb/IMG_6782.jpg" style="width:100%" class="image"> 
-      <img src="test/project/photo/feb/IMG_6812.jpg" style="width:100%" class="image">
-      <img src="test/project/photo/feb/IMG_6844.jpg" style="width:100%" class="image">
-      <img src="test/project/photo/feb/IMG_6842.jpg" style="width:100%" class="image">
-      <img src="test/project/photo/feb/IMG_6792.jpg" style="width:100%" class="image">
-     
-    </div>
-    <div class="column">
-      <img src="test/project/photo/feb/IMG_6769.jpg" style="width:100%" class="image">
-      <img src="test/project/photo/feb/IMG_6773.jpg" style="width:100%" class="image">
-      <img src="test/project/photo/feb/IMG_6783.jpg" style="width:100%" class="image">
-      <img src="test/project/photo/feb/IMG_6834.jpg" style="width:100%" class="image">
-      <img src="test/project/photo/feb/IMG_6817.PNG" style="width:100%" class="image">
 
-    </div>
+
   </div>
-
-
-
-
-
-</div>   
   <div hidden>
-      <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=KBuauQOIkNsWmRzumbBxKEs8qqBZpDtQPGOLECw_VCE"></script>
+    <script type="text/javascript" id="clstr_globe"
+      src="//clustrmaps.com/globe.js?d=KBuauQOIkNsWmRzumbBxKEs8qqBZpDtQPGOLECw_VCE"></script>
 
-    </div>
-    <script>
-      var acc = document.getElementsByClassName("accordion");
-      var i;
-      
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var panel = this.nextElementSibling;
-          if (panel.style.display === "block") {
-            panel.style.display = "none";
-          } else {
-            panel.style.display = "block";
-          }
-        });
-      }
-      </script>
-    </body>
+  </div>
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+
+    for (let i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        for (j = 0; j < acc.length; j++) {
+          if (j !== i)
+            acc[j].nextElementSibling.style.maxHeight = null;
+        }
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+
+</body>
+
 </html>

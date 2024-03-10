@@ -100,6 +100,13 @@
     border-radius: 8px;
   }
 
+  .column iframe{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 5px;
+    border:none;
+  }
 
   /* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 800px) {
@@ -123,6 +130,7 @@
 <body>
   <div class="header">
     <h1>moments</h1>
+
   </div>
 
   <button class="accordion">
@@ -249,6 +257,11 @@
         <img src="test/project/photo/mar/IMG_7113.jpg" style="width:100%" class="image">
         <img src="test/project/photo/mar/IMG_7134.jpg" style="width:100%" class="image">
         <img src="test/project/photo/mar/IMG_7143.jpg" style="width:100%" class="image">
+        <img src="test/project/photo/mar/IMG_7195.jpg" style="width:100%" class="image">
+        <iframe
+          src="https://open.spotify.com/embed/track/3Z0qLOS0cqWKPHXkbTXmNF?utm_source=generator" 
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+           loading="lazy"></iframe>
 
       </div>
       <div class="column">
@@ -267,11 +280,15 @@
         <img src="test/project/photo/mar/tinky.jpg" style="width:100%" class="image">
         <img src="test/project/photo/mar/IMG_2739.jpg" style="width:100%" class="image">
         <img src="test/project/photo/mar/IMG_7147.jpg" style="width:100%" class="image">
-      </div>
-  <div hidden>
+        <img src="test/project/photo/mar/IMG_7202.jpg" style="width:100%" class="image">
+      </div>  
+  <!-- <div hidden>
     <script type="text/javascript" id="clstr_globe"
       src="//clustrmaps.com/globe.js?d=KBuauQOIkNsWmRzumbBxKEs8qqBZpDtQPGOLECw_VCE"></script>
-  </div>
+  </div> -->
+
+  
+
   <script>
     function scrollToElement($el, time = 500) {
       $([document.documentElement, document.body]).animate({

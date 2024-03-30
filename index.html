@@ -41,11 +41,16 @@
 
   .panel {
     padding: 0 18px;
-    background-color: white;
+    background-color: rgb(25, 62, 173);
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-image: url("test/project/photo/background_image/istockphoto-1284024960-612x612.jpg");
+  }
+  .panel h1{
+    color: rgb(91, 2, 209);
+    background-color: rgb(235, 136, 44);
+    opacity: 10px;
   }
 
   * {
@@ -137,8 +142,6 @@
   <div class="header">
     <h1>moments</h1>
     <br>
-    <h5>loading slow? use wifi, silly :)</h5>
-    <h5>actually...mobile data works better for me...idk.</h5>
   <button class="accordion">
     <center>January 2024<div id="dialog2" class="triangle_down1"></div>
     </center>
@@ -320,10 +323,28 @@
       </div> 
     </div>
   </div>
-      <div hidden>
+  <br>
+  <button class="accordion" href="#top">
+    <center>April 2024<div id="dialog2" class="triangle_down1"></div>
+    </center>
+  </button>
+  <div class="panel">
+    <h1><center>Why'd you click silly? It's not April yet :p</center></h1>
+    <div class="row">
+      <div class="column">
+      </div>
+      <div class="column">
+      </div>  
+      <div class="column">
+      </div>
+      <div class="column">
+      </div> 
+    </div>
+  </div>
+      <!-- <div hidden>
         <script type="text/javascript" id="clstr_globe"
           src="//clustrmaps.com/globe.js?d=KBuauQOIkNsWmRzumbBxKEs8qqBZpDtQPGOLECw_VCE"></script>
-      </div>
+      </div> -->
       <script>
         function scrollToElement($el, time = 500) {
           $([document.documentElement, document.body]).animate({
